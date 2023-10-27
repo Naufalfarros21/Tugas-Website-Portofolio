@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Quicksand:wght@500;700&display=swap');
+
 * {
     margin: 0;
     outline: none;
@@ -5,7 +7,7 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'Inter', 'sans-serif', 'poppins';
 }
 
 :root {
@@ -43,6 +45,7 @@ header {
     width: 100%;
     padding: 20px 9%;
     background-color: var(--bg-color);
+    transition: all .50s ease;
 }
 
 .logo {
@@ -52,15 +55,27 @@ header {
     cursor: default;
 }
 
+.navbar {
+    display: flex;
+}
+
 .navbar a {
     margin-left: 40px;
     font-size: 17px;
     color: var(--text-color);
-    transition: .3s;
+    transition: all .50s ease;
 }
 
 .navbar a :hover {
     color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color) , 2px 1px 30px var(--text-color);
+}
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
 
 /* =============================  Hero_Section_Design  ========================= */
@@ -228,6 +243,56 @@ span {
     font-size: 15px;
     margin: 10px 0 30px;
 }
+
+
+/*============== blog - section - design ===================*/
+
+.blog h2 {
+    margin-bottom: 40px;
+}
+
+.blog-box h3 {
+    font-size: 26px;
+    padding: 20px 0 10px;
+}
+
+.blog-box p {
+    font-size: 15px;
+    margin: 10px 0 30px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 25px;
+}
+
+.blog-container .blog-box {
+    flex: 1 1 300px;
+    background: var(--second-bg-color);
+    text-align: center;
+    padding: 30px 20px 40px;
+    border-radius: 20px;
+    border: .2 solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.blog-container .blog-box:hover {
+    border: 2px solid var(--main-color);
+    transform: scale(1.02);
+}
+
+.blog-box img {
+    border-radius: 10px;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.blog-box:hover img {
+    transform: scale(1.1);
+}
+
 
 
 /* ===========================  Portfolio-Section-Design  ======================= */
