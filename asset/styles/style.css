@@ -70,7 +70,6 @@ section {
     color: var(--main-color);
 }
 
-
 /* =============================  Hero_Section_Design  ========================= */
 
 .home {
@@ -232,7 +231,6 @@ span {
     margin: 10px 0 30px;
 }
 
-
 /*============== blog - section - design ===================*/
 
 .blog h2 {
@@ -280,8 +278,6 @@ span {
 .blog-box:hover img {
     transform: scale(1.1);
 }
-
-
 
 /* ===========================  Portfolio-Section-Design  ======================= */
 
@@ -442,7 +438,6 @@ form .btn-send {
     display: flex;
     justify-content: space-between;
 }
-
 
 /* ===============================  Footer  ============================ */
 
