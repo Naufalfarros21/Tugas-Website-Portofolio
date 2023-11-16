@@ -59,8 +59,6 @@ section {
     cursor: default;
 }
 
-
-
 .navbar a {
     margin-left: 40px;
     font-size: 17px;
@@ -72,13 +70,6 @@ section {
     color: var(--main-color);
 }
 
-#menu-icon {
-    font-size: 36px;
-    color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-}
 
 /* =============================  Hero_Section_Design  ========================= */
 
@@ -485,109 +476,4 @@ form .btn-send {
 .footer-icontop a i {
     font-size: 24px;
     color: var(--second-bg-color);
-}
-
-/*=== Breakpoints ===*/
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px) {
-    .header {
-        padding: 20px 3%;
-    }
-
-    section {
-        padding: 100px 3% 20px;
-    }
-
-    .skills {
-        padding-bottom: 70px;
-    }
-
-    .portfolio {
-        padding-bottom: 70px;
-    }
-
-    .contact {
-        min-height: auto;
-    }
-
-    .footer {
-        padding: 20px 3%;
-    }
-}
-
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 20px;
-        margin: 30px 0;
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 26px;
-    }
-
-    .home-content h1 {
-        font-size: 50px;
-    }
-
-    .home-image img {
-        width: 70vw;
-        margin-top: 40px;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-    }
-
-    .about img {
-        width: 70vw;
-        margin-top: 40px;
-    }
-
-    .skills h2 {
-        margin-bottom: 30px;
-    }
-
-    .portfolio h2 {
-        margin-bottom: 30px;
-    }
-
-    .portfolio-container {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (max-width: 617px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
 }
